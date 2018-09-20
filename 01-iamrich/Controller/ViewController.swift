@@ -34,7 +34,7 @@ class ViewController: UIViewController {
         //self.labelTitle.textColor = UIColor.blue
         //self.labelTitle.font = UIFont.systemFont(ofSize: 24.0)
         //self.imageViewDiamond.image = UIImage(named: "ruby-image")
-        
+          
         let controller = UIAlertController(title: "I am Rich", message: """
                                                     I am Rich
                                                     I deserve it
