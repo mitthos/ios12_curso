@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="_1_iamrich" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ruby-image" translatesAutoresizingMaskIntoConstraints="NO" id="ITE-lo-17U">
+                                <rect key="frame" x="27" y="194" width="321" height="279"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I am Rich" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sKw-mc-nyJ">
+                                <rect key="frame" x="100" y="79" width="175.5" height="55"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="40"/>
+                                <color key="textColor" red="1" green="0.12743844245691116" blue="0.037771541221677141" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T0l-1w-mx1">
+                                <rect key="frame" x="152.5" y="533" width="70" height="36"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="17"/>
+                                <state key="normal" title="Push me">
+                                    <color key="titleColor" red="1" green="0.1274384425" blue="0.037771541220000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wBd-kp-Pee"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.37393404491220783" green="0.060870386298437149" blue="0.46044502202710957" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="ITE-lo-17U" firstAttribute="top" secondItem="sKw-mc-nyJ" secondAttribute="bottom" constant="60" id="0gR-Gc-lTK"/>
+                            <constraint firstItem="ITE-lo-17U" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="6nW-BO-58Z"/>
+                            <constraint firstItem="ITE-lo-17U" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Ctw-Wp-sKy"/>
+                            <constraint firstItem="ITE-lo-17U" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="EaT-YB-s53"/>
+                            <constraint firstItem="T0l-1w-mx1" firstAttribute="top" secondItem="ITE-lo-17U" secondAttribute="bottom" constant="60" id="bEc-Z7-9vg"/>
+                            <constraint firstItem="ITE-lo-17U" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bW8-qO-St0"/>
+                            <constraint firstItem="sKw-mc-nyJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="gaK-Zy-Jwk"/>
+                            <constraint firstItem="T0l-1w-mx1" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="p5A-rK-8gJ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="buttonPush" destination="T0l-1w-mx1" id="bw3-aC-3wk"/>
+                        <outlet property="imageViewDiamond" destination="ITE-lo-17U" id="1sQ-Ox-mEf"/>
+                        <outlet property="labelTitle" destination="sKw-mc-nyJ" id="Zn0-7b-die"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="47.200000000000003" y="23.838080959520241"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ruby-image" width="321" height="279"/>
+    </resources>
+</document>
